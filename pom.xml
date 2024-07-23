@@ -3,7 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.lebedev</groupId>
   <artifactId>electronic_diary</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
+  <modules>
+    <module>Database</module>
+      <module>service</module>
+  </modules>
   <version>1.0-SNAPSHOT</version>
   <name>electronic_diary Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -13,6 +17,11 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
     </dependency>
   </dependencies>
   <build>
